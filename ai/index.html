@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="lt" data-refpop="{&#34;open&#34;:&#34;Atverti konspekte →&#34;,&#34;goto&#34;:&#34;Eiti ten →&#34;,&#34;loading&#34;:&#34;Įkeliama…&#34;,&#34;failed&#34;:&#34;Šios nuorodos įkelti nepavyko.&#34;}"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="gm-part" content="am3"><title>Mokytis su DI · Aukštoji matematika III</title><meta name="description" content="Prašykite paaiškinimo, tada patys atlikite užduotį ir patikrinkite argumentą pagal konspektą."><link rel="icon" href="/am3/favicon.svg"><link rel="alternate" hreflang="lt" href="/am3/ai"><link rel="alternate" hreflang="en" href="/am3/en/ai"><script>
+      // Applied before first paint, so the page never flashes the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem("am42-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/am3/_astro/about.HntRQDPe.css"></head> <body> <script type="module" src="/am3/_astro/UserNav.astro_astro_type_script_index_0_lang.DBZI4Erb.js"></script>  <div class="board" aria-hidden="true"><div class="board-ink"></div></div> <script>
+      // Fade the board out over the first 60% of a screen of scrolling.
+      (function () {
+        var board = document.querySelector(".board"), frame = 0;
+        if (!board) return;
+        function update() {
+          frame = 0;
+          board.style.opacity = String(Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.6)));
+        }
+        window.addEventListener("scroll", function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        }, { passive: true });
+        update();
+      })();
+    </script> <a class="skip-link" href="#main">Pereiti prie turinio</a> <header class="site-header"> <div class="wrap bar"> <div class="course-switcher"> <a class="brand" href="/am3/">Aukštoji matematika</a> <nav class="part-switch" aria-label="Kurso dalys"> <a href="/am1/" aria-label="Aukštoji matematika I" title="Aukštoji matematika I"> I </a><a href="/am2/" aria-label="Aukštoji matematika II" title="Aukštoji matematika II"> II </a><a href="/am3/" aria-label="Aukštoji matematika III" title="Aukštoji matematika III" aria-current="page"> III </a> </nav> </div> <nav class="site-nav">  <div class="nav-links"> <a href="/am3/"> Paskaitos </a><a href="/am3/problems"> Uždaviniai </a><a href="/am3/review"> Kartojimas </a><a href="/am3/ai" aria-current="page"> Mokytis su DI </a><a href="/am3/literature"> Literatūra </a><a href="/am3/about"> Apie kursą </a><a href="/am3/search"> Paieška </a> </div>  <a class="matfiz-user-nav" href="/am3/user" data-matfiz-nav data-label="Mano pažanga" aria-label="Mano pažanga" title="Mano pažanga" data-matfiz-course="{&#34;version&#34;:1,&#34;id&#34;:&#34;am42&#34;,&#34;prefix&#34;:&#34;am42-&#34;,&#34;titles&#34;:{&#34;lt&#34;:&#34;Aukštoji matematika&#34;,&#34;en&#34;:&#34;General Mathematics&#34;},&#34;homes&#34;:{&#34;lt&#34;:&#34;/am1/&#34;,&#34;en&#34;:&#34;/am1/en/&#34;},&#34;details&#34;:{&#34;lt&#34;:&#34;/am3/&#34;,&#34;en&#34;:&#34;/am3/en/&#34;}}" hidden data-astro-cid-udyq3rbu> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-udyq3rbu> <path d="M3 3v18h18" data-astro-cid-udyq3rbu></path><path d="m7 15 4-4 3 3 5-6" data-astro-cid-udyq3rbu></path> </svg> </a>   <div class="lang-switch" role="group" aria-label="Kalba"> <a href="/am3/ai" hreflang="lt" lang="lt" aria-label="Lietuvių" title="Lietuvių" aria-current="true"> LT </a><a href="/am3/en/ai" hreflang="en" lang="en" aria-label="English" title="English"> EN </a> </div> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Perjungti šviesią ir tamsią temą"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </nav> </div> </header> <main class="wrap" id="main" data-pagefind-body="true">  <header class="page-head"> <h1>Mokytis padedant DI</h1> <p class="lede">Prašykite paaiškinimo, tada patys atlikite užduotį ir patikrinkite argumentą pagal konspektą.</p> </header> <section class="ask" id="ask" aria-labelledby="ask-heading" data-ask="{&#34;lectures&#34;:[{&#34;id&#34;:29,&#34;title&#34;:&#34;Skaitinės ir kintamųjų ženklų eilutės&#34;,&#34;sections&#34;:[&#34;Dalinės sumos apibrėžia begalinę sumą&#34;,&#34;Kriterijus baigtinėms liekanoms&#34;,&#34;Neneigiamų eilučių palyginimas&#34;,&#34;Absoliutusis konvergavimas ir santykio požymis&#34;,&#34;Šaknies ir integralinis požymiai&#34;,&#34;Alternuojančios sumos ir jų paklaida&#34;]},{&#34;id&#34;:30,&#34;title&#34;:&#34;Tolygusis konvergavimas ir laipsninės eilutės&#34;,&#34;sections&#34;:[&#34;Vienas indeksas visai apibrėžimo sričiai&#34;,&#34;Majorantė, kontroliuojanti kiekvieną liekaną&#34;,&#34;Tolydumas ir integravimas&#34;,&#34;Laipsninės eilutės ir Abelio įvertis&#34;,&#34;Laipsninės eilutės integravimas&#34;,&#34;Spindulio nustatymas ir galinių taškų tikrinimas&#34;,&#34;Tolygusis konvergavimas sąlyginio konvergavimo galiniame taške&#34;]},{&#34;id&#34;:31,&#34;title&#34;:&#34;Teiloro eilutės ir diferencijavimas panariui&#34;,&#34;sections&#34;:[&#34;Išvestinių eilutė turi tą patį spindulį&#34;,&#34;Teiloro koeficientai ir liekanos sąlyga&#34;,&#34;Eksponentės, sinuso ir kosinuso eilutės&#34;,&#34;Logaritmas ir jo galinis taškas&#34;,&#34;Kompleksinės eilutės ir eksponentė menamojoje ašyje&#34;]},{&#34;id&#34;:32,&#34;title&#34;:&#34;Judėjimas trajektorija&#34;,&#34;sections&#34;:[&#34;Padėtis ir diferencijavimas komponentėmis&#34;,&#34;Judėjimo atkūrimas iš pagreičio&#34;,&#34;Judanti polinė bazė&#34;,&#34;Ploto kitimo sparta ir nagrinėjama elipsė&#34;,&#34;Liestinė, normalė ir kreivumas&#34;]},{&#34;id&#34;:33,&#34;title&#34;:&#34;Pirmosios eilės diferencialinės lygtys&#34;,&#34;sections&#34;:[&#34;Lygtis ir jos pradinė reikšmė&#34;,&#34;Vietinis egzistavimas ir jo prielaidos&#34;,&#34;Kintamųjų atskyrimas ir pusiausvyros sprendiniai&#34;,&#34;Tiesinės lygtys ir integruojantysis daugiklis&#34;,&#34;Vėsimas kintančioje aplinkoje&#34;,&#34;Kompleksinė pirmosios eilės lygtis&#34;]},{&#34;id&#34;:34,&#34;title&#34;:&#34;Antrosios eilės tiesinės lygtys&#34;,&#34;sections&#34;:[&#34;Charakteristinė lygtis&#34;,&#34;Realieji sprendiniai trimis šaknų atvejais&#34;,&#34;Spyruoklės judėjimo slopinimas&#34;,&#34;Eksponentinis poveikis ir charakteristinės šaknys&#34;,&#34;Eksponentinė eilutė kompleksiniam argumentui&#34;]},{&#34;id&#34;:35,&#34;title&#34;:&#34;Priverstiniai svyravimai ir Furjė koeficientai&#34;,&#34;sections&#34;:[&#34;Sinusinis poveikis&#34;,&#34;Amplitudės maksimumas ir rezonansas&#34;,&#34;Ortogonalumas ir Furjė koeficientai&#34;,&#34;Periodiškai kartojamo tiesinio signalo eilutė&#34;,&#34;Kompleksiniai koeficientai ir simetrinės dalinės sumos&#34;,&#34;Baigtinis Furjė poveikis&#34;]},{&#34;id&#34;:36,&#34;title&#34;:&#34;Kelių kintamųjų funkcijų diferencijuojamumas&#34;,&#34;sections&#34;:[&#34;Aplinkos ir ribos&#34;,&#34;Dalinės išvestinės ir galima artinio matrica&#34;,&#34;Vienas tiesinis artinys visiems pokyčiams&#34;,&#34;Tolydžios dalinės išvestinės lemia diferencijuojamumą&#34;,&#34;Matricinė sudėtinės funkcijos taisyklė&#34;,&#34;Gradientai ir kitimas kryptimis&#34;]},{&#34;id&#34;:37,&#34;title&#34;:&#34;Vietinės lygtys ir kritiniai taškai&#34;,&#34;sections&#34;:[&#34;Vietinis apgręžiamumas&#34;,&#34;Neišreikštinės lygtys&#34;,&#34;Mišriosios antrosios išvestinės&#34;,&#34;Kvadratinis Teiloro artinys&#34;,&#34;Dviejų kintamųjų funkcijų kritiniai taškai&#34;]},{&#34;id&#34;:38,&#34;title&#34;:&#34;Dvilypiai integralai ir Gauso integralas&#34;,&#34;sections&#34;:[&#34;Mažų plotų sumos&#34;,&#34;Fubinio taisyklė ir integravimo tvarka&#34;,&#34;Kintamųjų keitimas ir determinanto modulis&#34;,&#34;Polinis integravimas kompaktiškose srityse&#34;,&#34;Gauso integralo reikšmė iš kompaktiškų įverčių&#34;,&#34;Tiesioginis integralas su parametru ir jo Teiloro įvertis&#34;,&#34;Plokštelės masė ir masės centras&#34;]},{&#34;id&#34;:39,&#34;title&#34;:&#34;Trigubieji integralai ir momentai&#34;,&#34;sections&#34;:[&#34;Tūriniai integralai kompaktiniuose kūnuose&#34;,&#34;Cilindrinės koordinatės&#34;,&#34;Sferinės koordinatės ir jų tūrio daugiklis&#34;,&#34;Rutulio masė ir inercijos momentas&#34;,&#34;Lygiagrečiųjų ašių sąryšis&#34;,&#34;Gauso radialinė masė ir gama momentai&#34;]},{&#34;id&#34;:40,&#34;title&#34;:&#34;Kreiviniai integralai, potencialai ir Grino teorema&#34;,&#34;sections&#34;:[&#34;Darbas išilgai orientuoto kelio&#34;,&#34;Gradientai ir galinių taškų skirtumai&#34;,&#34;Kryžminių dalinių išvestinių požymis žvaigždinėje srityje&#34;,&#34;Kodėl negalima praleisti srities sąlygos&#34;,&#34;Grino teorema grafikais aprėžtai sričiai&#34;]},{&#34;id&#34;:41,&#34;title&#34;:&#34;Srautas, paviršiai ir vektorinės išvestinės&#34;,&#34;sections&#34;:[&#34;Plotas ir fazinės plokštumos integralas&#34;,&#34;Plokštumos srautas į išorę&#34;,&#34;Reguliarioji paviršiaus dalis ir jos plotas&#34;,&#34;Orientacija ir vektorinis srautas&#34;,&#34;Sfera su išorine orientacija&#34;,&#34;Divergencija, rotorius ir Laplaso operatorius&#34;,&#34;Vietiniai šaltinio ir cirkuliacijos tankiai&#34;]},{&#34;id&#34;:42,&#34;title&#34;:&#34;Gauso ir Stokso teoremos&#34;,&#34;sections&#34;:[&#34;Divergencijos teorema stačiakampiam gretasieniui&#34;,&#34;Pratęsimas kompaktiniams kūnams ir vidiniai kraštai&#34;,&#34;Atvirkštinio kvadrato laukas ir jo singuliarumas&#34;,&#34;Stokso teorema ir indukuota krašto kryptis&#34;,&#34;Įrodymas vienoje leistinoje parametrų dalyje&#34;,&#34;Tas pats skritulio ir pussferės kraštas&#34;,&#34;Pasekmės ir tvermės modelis&#34;]}],&#34;context&#34;:&#34;Studijuoju aukštąją matematiką fizikos studentams. Paskaita {n}, „{title}“, skyrelis „{topic}“. Naudok konspekto žymėjimus. Nurodyk prielaidas ir pagrįsk kiekvieną žingsnį.&#34;,&#34;modes&#34;:[{&#34;id&#34;:&#34;explain&#34;,&#34;label&#34;:&#34;Paaiškinti ir pateikti pavyzdį&#34;,&#34;description&#34;:&#34;Trumpas paaiškinimas, pavyzdys ir uždavinys jums.&#34;,&#34;detailLabel&#34;:&#34;Kas neaišku? Neprivaloma.&#34;,&#34;detailPlaceholder&#34;:&#34;Pvz., kodėl svarbi kvantorių tvarka ribos apibrėžime&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;Neaiškumas: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\nTrumpai paaiškink idėją, išnagrinėk vieną konkretų pavyzdį ir pateik vieną panašų uždavinį. Jo nespręsk; palauk mano bandymo. Patikrink prielaidas, apibrėžimo sritį ir ženklus.&#34;},{&#34;id&#34;:&#34;quiz&#34;,&#34;label&#34;:&#34;Pateikti klausimą&#34;,&#34;description&#34;:&#34;Vienas klausimas ir jūsų bandymas.&#34;,&#34;detailLabel&#34;:&#34;Ką norite pasitikrinti?&#34;,&#34;detailPlaceholder&#34;:&#34;Apibrėžimas arba įrodymo žingsnis&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;Tema: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\nPateik vieną klausimą ir palauk mano atsakymo. Klaidos atveju pirmiausia duok užuominą, kad galėčiau ją ištaisyti pats.&#34;},{&#34;id&#34;:&#34;check&#34;,&#34;label&#34;:&#34;Patikrinti mano sprendimą&#34;,&#34;description&#34;:&#34;Patikrinti žingsnius, nepateikiant viso sprendimo.&#34;,&#34;detailLabel&#34;:&#34;Jūsų sprendimas arba abejotinas žingsnis&#34;,&#34;detailPlaceholder&#34;:&#34;Įrašykite savo bandymą&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;Mano bandymas: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\nPatikrink mano argumentą. Nurodyk pirmą nepagrįstą žingsnį ir vieną patikrinimą, kurį galiu atlikti pats. Išsaugok konspekto prielaidas ir žymėjimus.&#34;}]}" data-text="{&#34;copied&#34;:&#34;Nukopijuota ✓&#34;,&#34;selected&#34;:&#34;Pažymėta užklausa; nukopijuokite ją klavišais Ctrl+C.&#34;}"> <h2 id="ask-heading">Klausti apie paskaitą</h2> <div class="ask-card"> <label class="ask-step"> <span>Paskaita</span> <select class="select-field" data-lecture> <option value="29"> 29 · Skaitinės ir kintamųjų ženklų eilutės </option><option value="30"> 30 · Tolygusis konvergavimas ir laipsninės eilutės </option><option value="31"> 31 · Teiloro eilutės ir diferencijavimas panariui </option><option value="32"> 32 · Judėjimas trajektorija </option><option value="33"> 33 · Pirmosios eilės diferencialinės lygtys </option><option value="34"> 34 · Antrosios eilės tiesinės lygtys </option><option value="35"> 35 · Priverstiniai svyravimai ir Furjė koeficientai </option><option value="36"> 36 · Kelių kintamųjų funkcijų diferencijuojamumas </option><option value="37"> 37 · Vietinės lygtys ir kritiniai taškai </option><option value="38"> 38 · Dvilypiai integralai ir Gauso integralas </option><option value="39"> 39 · Trigubieji integralai ir momentai </option><option value="40"> 40 · Kreiviniai integralai, potencialai ir Grino teorema </option><option value="41"> 41 · Srautas, paviršiai ir vektorinės išvestinės </option><option value="42" selected> 42 · Gauso ir Stokso teoremos </option> </select> </label> <fieldset class="ask-step"> <legend>Skyrelis</legend> <div class="chip-row" data-topics> <label class="topic-chip"><input type="radio" name="ask-topic" value="Divergencijos teorema stačiakampiam gretasieniui" checked><span>Divergencijos teorema stačiakampiam gretasieniui</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Pratęsimas kompaktiniams kūnams ir vidiniai kraštai"><span>Pratęsimas kompaktiniams kūnams ir vidiniai kraštai</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Atvirkštinio kvadrato laukas ir jo singuliarumas"><span>Atvirkštinio kvadrato laukas ir jo singuliarumas</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Stokso teorema ir indukuota krašto kryptis"><span>Stokso teorema ir indukuota krašto kryptis</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Įrodymas vienoje leistinoje parametrų dalyje"><span>Įrodymas vienoje leistinoje parametrų dalyje</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Tas pats skritulio ir pussferės kraštas"><span>Tas pats skritulio ir pussferės kraštas</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Pasekmės ir tvermės modelis"><span>Pasekmės ir tvermės modelis</span></label> </div> </fieldset> <fieldset class="ask-step"> <legend>Ko reikia?</legend> <div class="mode-grid"> <label class="mode"> <input type="radio" name="ask-mode" value="explain" checked> <span class="mode-label">Paaiškinti ir pateikti pavyzdį</span> <span class="mode-description">Trumpas paaiškinimas, pavyzdys ir uždavinys jums.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="quiz"> <span class="mode-label">Pateikti klausimą</span> <span class="mode-description">Vienas klausimas ir jūsų bandymas.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="check"> <span class="mode-label">Patikrinti mano sprendimą</span> <span class="mode-description">Patikrinti žingsnius, nepateikiant viso sprendimo.</span> </label> </div> </fieldset> <label class="ask-step"> <span data-detail-label>Kas neaišku? Neprivaloma.</span> <textarea class="number-field ask-detail" rows="2" data-detail placeholder="Pvz., kodėl svarbi kvantorių tvarka ribos apibrėžime"></textarea> </label> <label class="ask-step"> <span>Jūsų užklausa — galite ją redaguoti</span> <textarea class="ask-preview" rows="12" data-preview spellcheck="false"></textarea> </label> <div class="ask-actions"> <a class="btn btn-primary" href="https://www.google.com/search?udm=50" target="_blank" rel="noopener" data-ai-mode>Klausti Google AI ↗</a> <button class="btn" type="button" data-copy-preview>Kopijuoti užklausą</button> </div> <p class="ask-status" data-status role="status" aria-live="polite">Užklausą galima naudoti pasirinktame DI pokalbyje.</p> </div> </section><h2>Pokalbio pavyzdys</h2> <p class="section-intro">3-ioji paskaita: indekso parinkimas ribos įrodyme.</p> <div class="chat"> <div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">Jūs</span> <p>Kaip parinkti N įrodant, kad 1/n artėja prie nulio?</p> </div>  </div><div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">DI</span> <p>Tegul ε &gt; 0. Kokia nelygybė užtikrintų 1/n &lt; ε? Parink N ir patikrink kiekvieną n ≥ N.</p> </div>  </div> </div> <h2>Trys mokymosi įpročiai</h2> <ul class="habits"> <li><b>Klauskite tiksliai.</b> Nurodykite apibrėžimą, prielaidą arba konkretų žingsnį.</li><li><b>Bandykite patys.</b> Paprašę užduoties, pirmiausia ją atlikite.</li><li><b>Tikrinkite.</b> Palyginkite prielaidas, kvantorius ir ženklus su konspektu.</li> </ul> <h2>Ilgesnis darbas</h2> <p class="section-intro">Užpildykite laužtiniuose skliaustuose nurodytus laukus.</p> <details class="prompt-card" data-prompt> <summary> <span class="prompt-title">Praktikuotis taikyti apibrėžimą</span> <span class="prompt-when">Išnagrinėti vieną nedidelį pavyzdį.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Studijuoju aukštąją matematiką. Tema: [apibrėžimas ir paskaita]. Nurodyk prielaidas, išnagrinėk vieną nedidelį pavyzdį, tada pateik panašų uždavinį ir palauk mano bandymo. Naudok konspekto žymėjimus ir patikrink kiekvieną žingsnį.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Kopijuoti užklausą</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><h2>Darbas poromis</h2> <ol class="steps"> <li>Dirbkite poromis. Kiekvienas sukurkite uždavinį ir patys jį išspręskite; sprendinio kol kas nerodykite.</li><li>Apsikeiskite tik uždaviniais.</li><li>Išspręskite partnerio uždavinį.</li><li>Aptarkite be DI: ar sprendiniai sutapo, ar sąlygoje nebuvo spragos, ar autoriaus sprendinys teisingas?</li> </ol> <div class="trap"> <h3>Du pavojai</h3> <p><strong>Uždavinio autorius turi pats patikrinti sprendimą.</strong> Nepasitikėkite nepatikrintu DI pateiktu atsakymu.</p><p><strong>Neskubėkite prašyti viso sprendimo.</strong> Pirmiausia pateikite savo bandymą ir paprašykite vienos užuominos.</p> </div> <script>
+    (function () {
+      /** Copy synchronously inside the click; the async API is the fallback. */
+      function copy(text) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed"; area.style.opacity = "0"; area.style.top = "0";
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        if (!ok && navigator.clipboard) {
+          navigator.clipboard.writeText(text).catch(function () {});
+          ok = true;
+        }
+        return ok;
+      }
+      function say(status, message) {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.add("is-live");
+      }
+
+      // ---- Ask about a lecture -------------------------------------------
+      var ask = document.querySelector("[data-ask]");
+      if (ask) {
+        var data = JSON.parse(ask.dataset.ask);
+        var text = JSON.parse(ask.dataset.text);
+        var lectureSelect = ask.querySelector("[data-lecture]");
+        var topics = ask.querySelector("[data-topics]");
+        var detail = ask.querySelector("[data-detail]");
+        var detailLabel = ask.querySelector("[data-detail-label]");
+        var preview = ask.querySelector("[data-preview]");
+        var status = ask.querySelector("[data-status]");
+
+        var fill = function (template, values) {
+          return template.replace(/\{(\w+)\}/g, function (whole, key) {
+            return key in values ? values[key] : whole;
+          });
+        };
+        var lecture = function () {
+          return data.lectures.find(function (l) { return String(l.id) === lectureSelect.value; });
+        };
+        var mode = function () {
+          var picked = ask.querySelector("input[name=ask-mode]:checked");
+          return data.modes.find(function (m) { return m.id === (picked && picked.value); }) || data.modes[0];
+        };
+        var topic = function () {
+          var picked = ask.querySelector("input[name=ask-topic]:checked");
+          return picked ? picked.value : "";
+        };
+
+        var renderTopics = function () {
+          topics.textContent = "";
+          lecture().sections.forEach(function (title, index) {
+            var label = document.createElement("label");
+            label.className = "topic-chip";
+            var input = document.createElement("input");
+            input.type = "radio"; input.name = "ask-topic"; input.value = title; input.checked = index === 0;
+            var span = document.createElement("span");
+            span.textContent = title;
+            label.appendChild(input); label.appendChild(span);
+            topics.appendChild(label);
+          });
+        };
+        var render = function () {
+          var l = lecture(), m = mode(), typed = detail.value.trim();
+          detailLabel.textContent = m.detailLabel;
+          detail.placeholder = m.detailPlaceholder;
+          var context = fill(data.context, { n: l.id, title: l.title, topic: topic() });
+          var detailText = typed ? fill(m.detailFilled, { detail: typed }) : m.detailEmpty;
+          preview.value = fill(m.template, { context: context, detail: detailText })
+            .replace(/\n{3,}/g, "\n\n");
+          syncAiMode();
+        };
+        var aiMode = ask.querySelector("[data-ai-mode]");
+        var syncAiMode = function () {
+          aiMode.href = "https://www.google.com/search?udm=50&q=" + encodeURIComponent(preview.value);
+        };
+        // The preview is editable, and an edited prompt is the one to send.
+        preview.addEventListener("input", syncAiMode);
+
+        // A lecture page links here as ai/?lecture=N, so arrive on that lecture.
+        var wanted = new URLSearchParams(location.search).get("lecture");
+        if (wanted && data.lectures.some(function (l) { return String(l.id) === wanted; })) {
+          lectureSelect.value = wanted;
+          renderTopics();
+        }
+        lectureSelect.addEventListener("change", function () { renderTopics(); render(); });
+        // The preview is excluded: its change event fires on blur, and
+        // re-rendering then would throw away what the student just edited.
+        ask.addEventListener("change", function (event) {
+          if (event.target !== lectureSelect && event.target !== preview && event.target !== detail) render();
+        });
+        detail.addEventListener("input", render);
+        render();
+
+        ask.querySelector("[data-copy-preview]").addEventListener("click", function () {
+          if (copy(preview.value)) { say(status, text.copied); }
+          else { preview.select(); say(status, text.selected); }
+        });
+      }
+
+      // ---- The long prompts ----------------------------------------------
+      var strings = ask ? JSON.parse(ask.dataset.text) : { copied: "✓", selected: "Ctrl+C" };
+      document.querySelectorAll("[data-prompt]").forEach(function (card) {
+        var source = card.querySelector("[data-prompt-text]");
+        var body = source.textContent || "";
+        var status = card.querySelector("[data-status]");
+        var selectSource = function () {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+        };
+        card.querySelector("[data-copy]").addEventListener("click", function () {
+          if (copy(body)) { say(status, strings.copied); }
+          else { selectSource(); say(status, strings.selected); }
+        });
+      });
+    })();
+  </script>  </main> <footer class="site-footer"> <div class="wrap"> <p> Aukštoji matematika III — Eilutės, diferencialinės lygtys ir vektorinė analizė.
+  Uždavinių lapai čia skelbiami tik su klausimais. </p> </div> </footer> <script>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", function () {
+        var root = document.documentElement;
+        var current = root.getAttribute("data-theme");
+        if (!current) {
+          current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("am42-theme", next); } catch (e) {}
+      });
+    </script>  <script type="module" src="/am3/_astro/Base.astro_astro_type_script_index_0_lang.CX-CUpie.js"></script> </body> </html>
